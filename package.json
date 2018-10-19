@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "generate": "ts-node ./src/index.ts | xargs -I % qrcode '%' -o ./file.png"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.0",
+    "jolocom-lib": "^2.0.10",
+    "qrcode": "^1.3.0"
+  }
+}

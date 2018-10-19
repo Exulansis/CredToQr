@@ -1,0 +1,25 @@
+{
+    "version": "2.7.1",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "removeComments": true,
+        "lib": ["dom","es2017"],
+        "noLib": false,
+        "preserveConstEnums": true,
+        "declaration": true,
+        "sourceMap": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "outDir": "./js/",
+        "rootDir": "./src",
+        "experimentalDecorators": true
+    },
+    "filesGlob": [
+        "./src/**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "exclude": [
+        "./js",
+        "./tests/**/*"
+    ]
+}
