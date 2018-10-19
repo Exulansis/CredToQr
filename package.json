@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "generate": "./node_modules/.bin/ts-node ./src/index.ts | xargs -I % ./node_modules/.bin/qrcode '%' -o ./file.png"
+    "generate": "./node_modules/.bin/qrcode \"$(ts-node ./src/index.ts)\" -o ./out.png -e 'L'"
   },
   "dependencies": {
     "@types/node": "^10.12.0",
